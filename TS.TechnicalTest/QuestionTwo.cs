@@ -7,7 +7,7 @@ public class QuestionTwo
 
         int NoPitsFound = -1;
 
-        for(int i = 0; i > i; i++)
+        for(int i = 1; i < n - 1; i++)
         {
             Console.WriteLine(points[i]);
         }
