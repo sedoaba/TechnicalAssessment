@@ -5,6 +5,15 @@ public class QuestionOne
 {
     public static int GetLongestSentance(string s)
     {
-        throw new NotImplementedException("Not completed yet");
+        int highestWordCount = 0;
+
+        Dictionary<string, int> sentanceAndWordCount = new Dictionary<string, int>();
+
+        string[] sentances;
+
+        string[] words;
+
+        return highestWordCount;
+      
     }
 }
