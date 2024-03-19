@@ -13,4 +13,14 @@ public class UnitTest1
 
         Assert.AreEqual(4, outcome);
     }
+
+    [TestMethod]
+    public void GetLogestSentance_With_Successful_Result()
+    {
+        var input = "Forget CVs..Save time . x x";
+
+        var outcome = QuestionOne.GetLongestSentance(input);
+
+        Assert.AreEqual(2, outcome);
+    }
 }
