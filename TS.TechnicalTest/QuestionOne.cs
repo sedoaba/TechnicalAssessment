@@ -24,18 +24,29 @@ public class QuestionOne
             foreach(string word in words)
             {
                 //check if the word is valid by check its length
-                if(word.Length > 0)
+                if (word.Length > 0)
                 {
                     //when the word is valid i do a check if my dictionary has the sentance stored
                     if (sentanceAndWordCount.ContainsKey(sentance))
                     {
-                        Console.WriteLine("Found");
+                        //increment value for every valid word
+                        sentanceAndWordCount[sentance]++;
                     }
                     else
                     {
-                        Console.WriteLine("Must Store");
+                        sentanceAndWordCount[sentance] = 1;
                     }
                 }
+            }
+        }
+
+        foreach(var key in sentanceAndWordCount.Keys)
+        {
+            //checking if the current sentance word count is greter than the highest word count variable
+            //set the new highest word count if true
+            if (sentanceAndWordCount[key] > highestWordCount)
+            {
+                highestWordCount = sentanceAndWordCount[key];
             }
         }
 
