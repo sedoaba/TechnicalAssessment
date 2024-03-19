@@ -9,7 +9,7 @@ public class UnitTest1
     public void Q1_BasicNominalTest()
     {
         var input = $"We test coders. Give us a try";
-        var outcome = LongestSentanceAnswer.Solution(input);
+        var outcome = QuestionOne.GetLongestSentance(input);
 
         Assert.AreEqual(4, outcome);
     }

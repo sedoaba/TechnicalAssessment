@@ -1,9 +1,9 @@
 ﻿
 namespace TS.TechnicalTest;
 
-public class LongestSentanceAnswer
+public class QuestionOne
 {
-    public static int Solution(string s)
+    public static int GetLongestSentance(string s)
     {
         throw new NotImplementedException("Not completed yet");
     }
