@@ -5,13 +5,22 @@ public class QuestionTwo
     {
         int n = points.Length;
 
-        int NoPitsFound = -1;
+        int depth = -1;
 
         for(int i = 1; i < n - 1; i++)
         {
-            Console.WriteLine(points[i]);
+            //checking if the current point is greater than the previous point
+            //then decrease the depth
+            if (points[i] > points[i - 1])
+                depth--;
+
+            //checking if the current point is less than the previous point
+            //then increment the depth
+            if (points[i] < points[i + 1])
+                depth++;
+
         }
 
-        return NoPitsFound;
+        return depth;
     }
 }
