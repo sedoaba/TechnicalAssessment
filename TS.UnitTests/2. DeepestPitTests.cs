@@ -9,7 +9,7 @@ public class DeepestPitTests
     public void Q2_BasicNominalTest()
     {
         var points = new[] {0, 1, 3, -2, 0, 1, -3, 2, 3};
-        var result = DeepestPitAnswer.Solution(points);
+        var result = QuestionTwo.GetPitDepth(points);
 
         Assert.AreEqual(4, result);
     }

@@ -1,7 +1,7 @@
 ﻿namespace TS.TechnicalTest;
-public class DeepestPitAnswer
+public class QuestionTwo
 {
-    public static int Solution(int[] points)
+    public static int GetPitDepth(int[] points)
     {
         throw new NotImplementedException("Not completed yet");
     }
