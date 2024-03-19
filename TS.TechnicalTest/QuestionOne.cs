@@ -18,7 +18,9 @@ public class QuestionOne
 
         foreach(string sentance in sentances)
         {
-            Console.WriteLine(sentance);
+            //so for each sentance i will split into words when i find a space in the sentance
+            words = sentance.Split(new char[] { ' ' });
+            Console.WriteLine(words);
         }
 
         return highestWordCount;
