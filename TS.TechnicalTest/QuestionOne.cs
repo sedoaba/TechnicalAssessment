@@ -13,6 +13,14 @@ public class QuestionOne
 
         string[] words;
 
+        //just spliting the sentances when the following characters are found (.), (?) and (!)
+        sentances = s.Split(new char[] {'.', '?', '!'});
+
+        foreach(string sentance in sentances)
+        {
+            Console.WriteLine(sentance);
+        }
+
         return highestWordCount;
       
     }
